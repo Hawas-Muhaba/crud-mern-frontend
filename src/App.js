@@ -5,7 +5,7 @@ import "./App.css"; // Basic CSS (optional)
 
 // Define the backend API base URL
 // IMPORTANT: This should match the port your Node.js backend is running on.
-const API_BASE_URL = "http://localhost:5000/api/items"; // Items endpoint
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL; // Items endpoint
 
 function App() {
   const [items, setItems] = useState([]); // State to store the list of items
